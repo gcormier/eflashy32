@@ -263,18 +263,6 @@ EN
 Text GLabel 7350 750  2    50   Input ~ 0
 GPIO0
 $Comp
-L Power_Protection:USBLC6-2SC6 U1
-U 1 1 5F039FD8
-P 2750 3300
-F 0 "U1" H 2750 3881 50  0000 C CNN
-F 1 "USBLC6-2SC6" H 2750 3790 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2750 2800 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 2950 3650 50  0001 C CNN
-F 4 "C7519" H 2750 3300 50  0001 C CNN "LCSC"
-	1    2750 3300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR05
 U 1 1 5F045653
 P 2750 3700
@@ -289,12 +277,6 @@ Wire Wire Line
 	1650 3350 1750 3350
 Wire Wire Line
 	1650 3150 1750 3150
-Text Label 3150 3200 0    50   ~ 0
-DOUT-
-Text Label 2350 3400 2    50   ~ 0
-DIN+
-Text Label 2350 3200 2    50   ~ 0
-DOUT+
 $Comp
 L Device:C_Small C2
 U 1 1 5F093AA3
@@ -308,14 +290,11 @@ F 4 "C49678" H 3550 3300 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 2900 3550 2900
-Wire Wire Line
 	3550 2900 3550 3200
 Wire Wire Line
 	3550 3400 3550 3700
 Wire Wire Line
 	3550 3700 2750 3700
-Connection ~ 2750 3700
 $Comp
 L Device:LED D3
 U 1 1 5F0AAB37
@@ -412,7 +391,6 @@ F 3 "" H 8850 3700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2050 2550 2050 2900
-Connection ~ 2750 2900
 Wire Wire Line
 	1950 2550 2050 2550
 $Comp
@@ -562,8 +540,6 @@ Wire Wire Line
 NoConn ~ 3800 1100
 Text Label 1750 3350 0    50   ~ 0
 DIN+
-Text Label 3150 3400 0    50   ~ 0
-DIN-
 NoConn ~ 750  4050
 $Comp
 L Interface_USB:CP2102N-A01-GQFN24 U2
@@ -834,8 +810,6 @@ Wire Wire Line
 Wire Wire Line
 	2250 2600 2250 2900
 Connection ~ 2250 2900
-Wire Wire Line
-	2250 2900 2750 2900
 NoConn ~ 1650 3650
 NoConn ~ 1650 3750
 $Comp
@@ -944,4 +918,36 @@ $EndComp
 Wire Wire Line
 	1650 2150 1650 2550
 Connection ~ 1650 2550
+$Comp
+L Power_Protection:USBLC6-4SC6 U1
+U 1 1 5F1989DD
+P 2750 3300
+F 0 "U1" H 2750 3881 50  0000 C CNN
+F 1 "ESD PROTECTION" H 2750 3790 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2750 2800 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/usblc6-4.pdf" H 2950 3650 50  0001 C CNN
+F 4 "C294963" H 2750 3300 50  0001 C CNN "LCSC"
+	1    2750 3300
+	1    0    0    -1  
+$EndComp
+Text Label 2350 3200 2    50   ~ 0
+DIN+
+Text Label 2350 3050 2    50   ~ 0
+DOUT+
+Wire Wire Line
+	2350 3200 2350 3050
+Text Label 2350 3400 2    50   ~ 0
+DIN-
+Text Label 2350 3500 2    50   ~ 0
+DOUT-
+Wire Wire Line
+	2250 2900 2750 2900
+Connection ~ 2750 2900
+Wire Wire Line
+	2750 2900 3550 2900
+Connection ~ 2750 3700
+Wire Wire Line
+	2350 3500 2350 3400
+NoConn ~ 3150 3200
+NoConn ~ 3150 3400
 $EndSCHEMATC
