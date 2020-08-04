@@ -1,7 +1,6 @@
 # eflashy32
 <img src="docs/eflashy32-3.png"  width=20%/>
-<img src="docs/eflashy32-1.png"  width=20%/>
-<img src="docs/eflashy32-2.png"  width=20%/>
+<img src="docs/eflashy32-1.png"  width=20%/><img src="docs/eflashy32-2.png"  width=20%/>
 
 eflashy32 is a USB Type-C, CP2102N serial interface targeting ESP devices. It has a 500mA resettable fuse, ESD protection, and a switch to choose if you want to send 3.3V to the device or not.
 
