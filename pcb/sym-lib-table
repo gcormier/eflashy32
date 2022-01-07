@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name eflashy32-rescue)(type Legacy)(uri ${KIPRJMOD}/eflashy32-rescue.lib)(options "")(descr ""))
+)

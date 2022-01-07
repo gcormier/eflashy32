@@ -542,14 +542,14 @@ Text Label 1750 3350 0    50   ~ 0
 DIN+
 NoConn ~ 750  4050
 $Comp
-L Interface_USB:CP2102N-A01-GQFN24 U2
+L eflashy32-rescue:CP2102N-A01-GQFN24-Interface_USB U2
 U 1 1 5EFF7E9C
 P 5900 3350
 F 0 "U2" H 6000 4250 50  0000 C CNN
 F 1 "CP2102N-A02-GQFN24" H 6400 4150 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 6350 2550 50  0001 L CNN
 F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 5950 2300 50  0001 C CNN
-F 4 "???" H 5900 3350 50  0001 C CNN "LCSC"
+F 4 "C969151" H 5900 3350 50  0001 C CNN "LCSC"
 	1    5900 3350
 	1    0    0    -1  
 $EndComp
@@ -563,14 +563,14 @@ Connection ~ 4650 2850
 Connection ~ 1650 3350
 Connection ~ 1650 3150
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J2
+L eflashy32-rescue:USB_C_Receptacle_USB2.0-Connector J2
 U 1 1 5F25798E
 P 1050 3150
 F 0 "J2" H 1050 4000 50  0000 C CNN
 F 1 "10137062-00021LF" H 1050 3900 50  0000 C CNN
 F 2 "!Greg:USBC-Amphenol-10137062-00021LF" H 1200 3150 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1200 3150 50  0001 C CNN
-F 4 "DNP" H 1050 3150 50  0001 C CNN "LCSC"
+F 4 "C388659" H 1050 3150 50  0001 C CNN "LCSC"
 	1    1050 3150
 	1    0    0    -1  
 $EndComp
